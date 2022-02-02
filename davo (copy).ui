@@ -1,0 +1,1339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>1280</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QScrollArea" name="ScrollAreaMain">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_9">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1004</width>
+         <height>1213</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <widget class="QTabWidget" name="search_base_tab">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="currentIndex">
+           <number>1</number>
+          </property>
+          <widget class="QWidget" name="tab">
+           <attribute name="title">
+            <string>Բազա</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QScrollArea" name="seacrh_scroll_area">
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents_8">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>962</width>
+                 <height>1142</height>
+                </rect>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_2">
+                <item row="0" column="1">
+                 <widget class="QTableView" name="tableView"/>
+                </item>
+                <item row="0" column="0">
+                 <layout class="QFormLayout" name="seacrh_form_layout">
+                  <property name="fieldGrowthPolicy">
+                   <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+                  </property>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="code">
+                    <property name="text">
+                     <string>Կոդ</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QLineEdit" name="code_lineedit_search"/>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QLabel" name="type">
+                    <property name="text">
+                     <string>Տեսակ</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <layout class="QVBoxLayout" name="type_form_layout">
+                    <item>
+                     <widget class="QCheckBox" name="checkbox_house">
+                      <property name="text">
+                       <string>Առանձնատուն</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QCheckBox" name="checkbox_appartment">
+                      <property name="text">
+                       <string>Բնակարան</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QCheckBox" name="checkbox_land">
+                      <property name="text">
+                       <string>Հողատարածք</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QCheckBox" name="checkbox_other">
+                      <property name="text">
+                       <string>Այլ</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="QLabel" name="provide">
+                    <property name="text">
+                     <string>Տրամադրում</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="1">
+                   <layout class="QVBoxLayout" name="vertical_layout_provide">
+                    <item>
+                     <widget class="QCheckBox" name="checkbox_rent">
+                      <property name="text">
+                       <string>Վարձակալություն</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QCheckBox" name="checkbox_sell">
+                      <property name="text">
+                       <string>Վաճառք</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="4" column="0">
+                   <widget class="QLabel" name="district">
+                    <property name="text">
+                     <string>Համայնք</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="1">
+                   <widget class="QComboBox" name="district_dropdown_select">
+                    <item>
+                     <property name="text">
+                      <string>Բոլորը</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Ավան</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Դավթաշեն</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Արաբկիր</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="5" column="0">
+                   <widget class="QLabel" name="street">
+                    <property name="text">
+                     <string>Փողոց</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="1">
+                   <widget class="QComboBox" name="street_dropdown_search">
+                    <item>
+                     <property name="text">
+                      <string>Բոլորը</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Տիգրան Պետրոսյան</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Արմեն Տիգրանյան</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Հրաչյա Քոչար</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Չկա</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="6" column="0">
+                   <widget class="QLabel" name="home">
+                    <property name="text">
+                     <string>Շենք/Տուն</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="1">
+                   <widget class="QLineEdit" name="format_home_flat_search"/>
+                  </item>
+                  <item row="7" column="0">
+                   <widget class="QLabel" name="room">
+                    <property name="text">
+                     <string>Սենյակ</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="7" column="1">
+                   <widget class="QComboBox" name="rooms_dropdown_search">
+                    <item>
+                     <property name="text">
+                      <string>Բոլորը</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>1</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>2</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>3</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>4</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>5</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>8+</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="8" column="0">
+                   <widget class="QLabel" name="floors_count">
+                    <property name="text">
+                     <string>Հարկերի Քանակ</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="8" column="1">
+                   <widget class="QComboBox" name="floors_count_search">
+                    <item>
+                     <property name="text">
+                      <string>Բոլորը</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>1</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>2</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>3</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>4</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>5</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>6</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>7</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>8</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>9</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>10</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>11</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>12</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>13</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>14</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>15</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>16</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>17</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>18</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>19</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>20</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>21</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>22</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>23</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>24</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>25</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="9" column="0">
+                   <widget class="QLabel" name="floor">
+                    <property name="text">
+                     <string>Հարկ</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="9" column="1">
+                   <widget class="QComboBox" name="search_the_floor_dropdown">
+                    <item>
+                     <property name="text">
+                      <string>Բոլորը</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>1</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>2</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>3</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>4</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>5</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>6</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>7</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>8</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>9</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>10</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>11</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>12</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>13</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>14</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>15</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>16</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>17</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>18</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>19</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>20</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>21</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>22</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>23</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>24</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>25</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="10" column="0">
+                   <widget class="QLabel" name="square">
+                    <property name="text">
+                     <string>Մակերես</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="10" column="1">
+                   <layout class="QHBoxLayout" name="horizontal_square_ranges_search">
+                    <item>
+                     <widget class="QLabel" name="label_2">
+                      <property name="text">
+                       <string>Սկսած</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="search_square_from"/>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label">
+                      <property name="text">
+                       <string>-</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label_3">
+                      <property name="text">
+                       <string>Վերջացրած</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="search_square_to"/>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="11" column="0">
+                   <widget class="QLabel" name="price">
+                    <property name="text">
+                     <string>Արժեք</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="11" column="1">
+                   <layout class="QHBoxLayout" name="horizontal_layout_search_prices">
+                    <item>
+                     <widget class="QLabel" name="label_4">
+                      <property name="text">
+                       <string>Սկսած</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="price_from"/>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label_5">
+                      <property name="text">
+                       <string>֊</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label_6">
+                      <property name="text">
+                       <string>Վերջացրած</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="price_to"/>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="12" column="0">
+                   <widget class="QLabel" name="gorcakal">
+                    <property name="text">
+                     <string>Գործակալ</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="12" column="1">
+                   <widget class="QLineEdit" name="user_name_of_worker_search"/>
+                  </item>
+                  <item row="13" column="1">
+                   <layout class="QHBoxLayout" name="search_horizontal_layout_for_buttons">
+                    <item>
+                     <widget class="QPushButton" name="button_clear">
+                      <property name="text">
+                       <string>Մաքրել</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="button_find">
+                      <property name="text">
+                       <string>Փնտրել</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="date">
+                    <property name="text">
+                     <string>Ամսաթիվ</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <layout class="QHBoxLayout" name="horizontal_layout_date">
+                    <item>
+                     <widget class="QLabel" name="label_13">
+                      <property name="text">
+                       <string>Սկսած</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QDateEdit" name="date_from"/>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label_14">
+                      <property name="text">
+                       <string>Վերջացրած</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QDateEdit" name="date_to"/>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="13" column="0">
+                   <widget class="QLabel" name="find">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_2">
+           <attribute name="title">
+            <string>Ավելացնել</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_4">
+            <item row="0" column="0">
+             <widget class="QScrollArea" name="scroll_area_add">
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents_7">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>962</width>
+                 <height>1142</height>
+                </rect>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_5">
+                <item row="0" column="0">
+                 <layout class="QFormLayout" name="formLayout_add">
+                  <property name="fieldGrowthPolicy">
+                   <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+                  </property>
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="type_add">
+                    <property name="text">
+                     <string>Տեսակ</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <layout class="QVBoxLayout" name="vertical_layout_type">
+                    <item>
+                     <widget class="QRadioButton" name="radio_button_house">
+                      <property name="text">
+                       <string>Առանձնատուն</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QRadioButton" name="radioButton_appartament">
+                      <property name="text">
+                       <string>Բնակարան</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QRadioButton" name="radio_button_land">
+                      <property name="text">
+                       <string>Հողատարածք</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QRadioButton" name="radioButton_other">
+                      <property name="text">
+                       <string>Այլ</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="provide_add">
+                    <property name="text">
+                     <string>Տրամադրում</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <layout class="QVBoxLayout" name="verticalLayout_provide">
+                    <item>
+                     <widget class="QCheckBox" name="checkBox_rent">
+                      <property name="text">
+                       <string>Վարձակալություն</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QCheckBox" name="checkBox_sell">
+                      <property name="text">
+                       <string>Վաճառք</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QLabel" name="district_add">
+                    <property name="text">
+                     <string>Համայնք</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QComboBox" name="dropdown_add_district">
+                    <item>
+                     <property name="text">
+                      <string>Բոլորը</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Ավան</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Դավթաշեն</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Արաբկիր</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="QLabel" name="street_add">
+                    <property name="text">
+                     <string>Փողոց</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="1">
+                   <widget class="QComboBox" name="dropdown_add_street">
+                    <item>
+                     <property name="text">
+                      <string>Բոլորը</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Տիգրան Պետրոսյան</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Արմեն Տիգրանյան</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Հրաչյա Քոչար</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Չկա</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="4" column="0">
+                   <widget class="QLabel" name="home_add">
+                    <property name="text">
+                     <string>Շենք/Տուն</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="1">
+                   <widget class="QLineEdit" name="add_format_of_property">
+                    <property name="text">
+                     <string>Ստուգել ֆորմատը</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="0">
+                   <widget class="QLabel" name="rooms_add">
+                    <property name="text">
+                     <string>Սենյակ</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="1">
+                   <widget class="QComboBox" name="dropdown_add_rooms">
+                    <item>
+                     <property name="text">
+                      <string>Բոլորը</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>1</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>2</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>3</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>4</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>5</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>8+</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="6" column="0">
+                   <widget class="QLabel" name="floors_count_2">
+                    <property name="text">
+                     <string>Հարկերի Քանակ</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="1">
+                   <widget class="QComboBox" name="dropdown_add_floors_count">
+                    <item>
+                     <property name="text">
+                      <string>Բոլորը</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>1</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>2</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>3</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>4</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>5</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>6</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>7</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>8</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>9</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>10</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>11</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>12</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>13</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>14</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>15</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>16</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>17</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>18</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>19</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>20</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>21</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>22</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>23</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>24</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>25</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="7" column="0">
+                   <widget class="QLabel" name="floors">
+                    <property name="text">
+                     <string>Հարկ</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="7" column="1">
+                   <widget class="QComboBox" name="dropdown_add_thefloor">
+                    <item>
+                     <property name="text">
+                      <string>Բոլորը</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>1</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>2</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>3</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>4</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>5</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>6</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>7</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>8</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>9</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>10</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>11</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>12</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>13</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>14</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>15</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>16</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>17</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>18</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>19</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>20</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>21</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>22</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>23</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>24</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>25</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="8" column="0">
+                   <widget class="QLabel" name="square_add">
+                    <property name="text">
+                     <string>Մակերես</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="8" column="1">
+                   <widget class="QLineEdit" name="lineEdit_add_square"/>
+                  </item>
+                  <item row="9" column="0">
+                   <widget class="QLabel" name="comment">
+                    <property name="text">
+                     <string>Նշումներ</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="9" column="1">
+                   <widget class="QTextEdit" name="textEdit_comment"/>
+                  </item>
+                  <item row="10" column="0">
+                   <widget class="QLabel" name="phonenumber_add">
+                    <property name="text">
+                     <string>Հեռախոս </string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="10" column="1">
+                   <widget class="QLineEdit" name="lineEdit_add_number">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="11" column="0">
+                   <widget class="QLabel" name="price_add">
+                    <property name="text">
+                     <string>Արժեք</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="11" column="1">
+                   <widget class="QLineEdit" name="lineEdit_add_price"/>
+                  </item>
+                  <item row="12" column="0">
+                   <widget class="QLabel" name="label_gorcakal">
+                    <property name="text">
+                     <string>Գործակալ</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="12" column="1">
+                   <widget class="QLineEdit" name="user_name_worker_add">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="13" column="0">
+                   <widget class="QLabel" name="find_add">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="13" column="1">
+                   <layout class="QHBoxLayout" name="horizontal_buttons_add">
+                    <item>
+                     <widget class="QPushButton" name="clear_button_adding">
+                      <property name="text">
+                       <string>Մաքրել</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="add_button">
+                      <property name="text">
+                       <string>Ավելացնել</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="14" column="0">
+                   <widget class="QLabel" name="Label">
+                    <property name="text">
+                     <string>Գրանցման ամսաթիվ ԱՎՏՈՄԱՏ</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="14" column="1">
+                   <widget class="QLineEdit" name="automate_linedit"/>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>clear_button_adding</sender>
+   <signal>clicked()</signal>
+   <receiver>textEdit_comment</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>439</x>
+     <y>822</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>388</x>
+     <y>558</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

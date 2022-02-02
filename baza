@@ -1,0 +1,21 @@
+id primary_key <=> kod -> long int
+added date - date()
+tesak -> int(1)
+tramadrum -> int(1)
+hamaynq -> int dict
+poxos ->int 
+shenq-tun -> varchar 10
+Senyak -> int
+hark -> int
+Makerers -> int
+Nshumner -> varchar kam ayl
+heraxos varchar 100
+arsheq -> int(4)
+gorcakal -> varchar 100
+
+
+
+#additional 
+status -> delete|add|in progress
+uma vacharvel u erb. (anun)
+

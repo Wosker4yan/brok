@@ -1,0 +1,10 @@
+Today:
+    Check input with mysql
+    add currency field in qt AND mysql
+    remove avtomat
+
+
+TODO:
+    Default tab need to be set to "baza"
+    Set maximum|fixed_width for baza and avelacnel menus
+    Set 20/80 % for search menu
